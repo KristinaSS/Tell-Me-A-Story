@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Unity Projects/2D/Tell-Me-A-Story/Packages/manifest.json
+    m_FilePath: C:/Users/yulig/Desktop/Tell-Me-A-Story/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637559819111275751
-    m_Hash: 2236508150
+      ticks: 637576435977451224
+    m_Hash: 3088291073
   m_LockFileStatus:
-    m_FilePath: D:/Unity Projects/2D/Tell-Me-A-Story/Packages/packages-lock.json
+    m_FilePath: C:/Users/yulig/Desktop/Tell-Me-A-Story/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637576134603129458
+      ticks: 637576437970790473
     m_Hash: 1901035566
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.0.4
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.animation@5.0.4
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.animation@5.0.4
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -92,15 +92,11 @@ m_PackageAssets:
         - 5.0.2
         - 5.0.3
         - 5.0.4
-        - 5.0.5
         - 6.0.0-pre.1
         - 6.0.0-pre.2
-        - 6.0.1
-        - 6.0.3
         compatible:
         - 5.0.4
-        - 5.0.5
-        verified: 5.0.5
+        verified: 5.0.4
       dependencies:
       - name: com.unity.2d.common
         version: 4.0.3
@@ -159,7 +155,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.1
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
       assetPath: Packages/com.unity.2d.pixel-perfect
       name: com.unity.2d.pixel-perfect
       displayName: 2D Pixel Perfect
@@ -197,7 +193,6 @@ m_PackageAssets:
         - 4.0.1
         - 5.0.0-pre.1
         - 5.0.0-pre.2
-        - 5.0.0
         compatible:
         - 4.0.1
         verified: 4.0.1
@@ -233,7 +228,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.2
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
       assetPath: Packages/com.unity.2d.psdimporter
       name: com.unity.2d.psdimporter
       displayName: 2D PSD Importer
@@ -282,8 +277,6 @@ m_PackageAssets:
         - 4.0.2
         - 5.0.0-pre.1
         - 5.0.0-pre.2
-        - 5.0.1
-        - 5.0.3
         compatible:
         - 4.0.2
         verified: 4.0.2
@@ -395,7 +388,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.1.1
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.spriteshape@5.1.1
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.spriteshape@5.1.1
       assetPath: Packages/com.unity.2d.spriteshape
       name: com.unity.2d.spriteshape
       displayName: 2D SpriteShape
@@ -457,14 +450,11 @@ m_PackageAssets:
         - 5.0.2
         - 5.1.0
         - 5.1.1
-        - 5.1.2
         - 6.0.0-pre.1
         - 6.0.0-pre.2
-        - 6.0.0
         compatible:
         - 5.1.1
-        - 5.1.2
-        verified: 5.1.2
+        verified: 5.1.1
       dependencies:
       - name: com.unity.mathematics
         version: 1.1.0
@@ -577,7 +567,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.0
       source: 5
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.tilemap.extras@b741f78da1
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.tilemap.extras@b741f78da1
       assetPath: Packages/com.unity.2d.tilemap.extras
       name: com.unity.2d.tilemap.extras
       displayName: 2D Tilemap Extras
@@ -612,10 +602,8 @@ m_PackageAssets:
         - 1.6.2-preview
         - 1.6.3-preview
         - 1.6.4-preview
-        - 1.7.0-preview
         - 2.0.0-pre.1
         - 2.0.0-pre.2
-        - 2.0.0
         compatible:
         - 1.5.0-preview
         - 1.6.0-preview.1
@@ -623,7 +611,6 @@ m_PackageAssets:
         - 1.6.2-preview
         - 1.6.3-preview
         - 1.6.4-preview
-        - 1.7.0-preview
         verified: 
       dependencies:
       - name: com.unity.modules.tilemap
@@ -664,7 +651,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.6.4
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.cinemachine@2.6.4
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.cinemachine@2.6.4
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -793,7 +780,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -827,7 +814,6 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
-        - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -840,7 +826,6 @@ m_PackageAssets:
         - 2.1.0-preview.6
         compatible:
         - 1.3.9
-        - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -890,7 +875,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -930,7 +915,6 @@ m_PackageAssets:
         - 3.0.3
         - 3.0.4
         - 3.0.5
-        - 3.0.6
         compatible:
         - 1.0.2
         - 1.0.6
@@ -955,7 +939,6 @@ m_PackageAssets:
         - 3.0.3
         - 3.0.4
         - 3.0.5
-        - 3.0.6
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -995,7 +978,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -1024,7 +1007,6 @@ m_PackageAssets:
         - 2.0.3
         - 2.0.5
         - 2.0.7
-        - 2.0.8
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1038,8 +1020,7 @@ m_PackageAssets:
         - 2.0.3
         - 2.0.5
         - 2.0.7
-        - 2.0.8
-        verified: 2.0.8
+        verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -1078,7 +1059,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -1147,7 +1128,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.22
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.test-framework@1.1.22
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.test-framework@1.1.22
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1236,7 +1217,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.1
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.textmeshpro@3.0.1
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.textmeshpro@3.0.1
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1307,8 +1288,6 @@ m_PackageAssets:
         - 1.5.1
         - 1.5.3
         - 1.5.4
-        - 1.5.5
-        - 1.5.6
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -1328,8 +1307,6 @@ m_PackageAssets:
         - 2.1.1
         - 2.1.3
         - 2.1.4
-        - 2.1.5
-        - 2.1.6
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -1345,15 +1322,11 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.3
         - 3.0.4
-        - 3.0.5
-        - 3.0.6
         compatible:
         - 3.0.1
         - 3.0.3
         - 3.0.4
-        - 3.0.5
-        - 3.0.6
-        verified: 3.0.6
+        verified: 3.0.4
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -1395,7 +1368,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.6
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.timeline@1.4.6
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.timeline@1.4.6
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1456,7 +1429,6 @@ m_PackageAssets:
         - 1.4.5
         - 1.4.6
         - 1.4.7
-        - 1.4.8
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1468,15 +1440,11 @@ m_PackageAssets:
         - 1.5.1-pre.3
         - 1.5.2
         - 1.5.4
-        - 1.5.5
         - 1.6.0-pre.1
         - 1.6.0-pre.3
-        - 1.6.0-pre.4
-        - 1.6.0-pre.5
         compatible:
         - 1.4.6
         - 1.4.7
-        - 1.4.8
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1488,12 +1456,9 @@ m_PackageAssets:
         - 1.5.1-pre.3
         - 1.5.2
         - 1.5.4
-        - 1.5.5
         - 1.6.0-pre.1
         - 1.6.0-pre.3
-        - 1.6.0-pre.4
-        - 1.6.0-pre.5
-        verified: 1.4.8
+        verified: 1.4.7
       dependencies:
       - name: com.unity.modules.director
         version: 1.0.0
@@ -3348,7 +3313,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3409,7 +3374,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.mathematics@1.1.0
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -3484,7 +3449,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.3
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.common@4.0.3
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.common@4.0.3
       assetPath: Packages/com.unity.2d.common
       name: com.unity.2d.common
       displayName: 2D Common
@@ -3518,7 +3483,6 @@ m_PackageAssets:
         - 4.0.3
         - 5.0.0-pre.1
         - 5.0.0-pre.2
-        - 5.0.0
         compatible:
         - 4.0.2
         - 4.0.3
@@ -3568,7 +3532,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.1
       source: 1
-      resolvedPath: D:\Unity Projects\2D\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.path@4.0.1
+      resolvedPath: C:\Users\yulig\Desktop\Tell-Me-A-Story\Library\PackageCache\com.unity.2d.path@4.0.1
       assetPath: Packages/com.unity.2d.path
       name: com.unity.2d.path
       displayName: 2D Path
@@ -3600,7 +3564,6 @@ m_PackageAssets:
         - 4.0.1
         - 5.0.0-pre.1
         - 5.0.0-pre.2
-        - 5.0.0
         compatible:
         - 4.0.1
         verified: 4.0.1
@@ -3631,5 +3594,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: D:/Unity Projects/2D/Tell-Me-A-Story/Packages
+m_ProjectPath: C:/Users/yulig/Desktop/Tell-Me-A-Story/Packages
 m_EditorVersion: 2020.3.0f1 (c7b5465681fb)
