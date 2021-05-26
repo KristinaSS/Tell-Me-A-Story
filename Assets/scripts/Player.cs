@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public Collider2D myCollider2D;
     public float gravityScaleAtStart;
     public Joystick joystick;
+    public Joybutton joybutton;
 
     // Message then methods
     void Start()
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
         myAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         myCollider2D = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
         gravityScaleAtStart = rb.gravityScale;
+        joybutton = FindObjectOfType<Joybutton>();
     }
 
     // Update is called once per frame
@@ -41,11 +43,11 @@ public class Player : MonoBehaviour
     private void Run()
     {
         float horizontalSpeed;
-        if(joystick.Horizontal >= .2f)
+        if (joystick.Horizontal >= .2f)
         {
             horizontalSpeed = runSpeed;
         }
-        else if(joystick.Horizontal <= -.2f)
+        else if (joystick.Horizontal <= -.2f)
         {
             horizontalSpeed = -runSpeed;
         }
@@ -76,10 +78,27 @@ public class Player : MonoBehaviour
             return;
         }
 
-        float controlThrow = Input.GetAxisRaw("Vertical");
+        /*float controlThrow = Input.GetAxisRaw("Vertical");
         Vector2 climbVelocity = new Vector2(rb.velocity.x, controlThrow * climbSpeed);
+        rb.velocity = climbVelocity;*/
+        float VerticalSpeed;
+        if (joystick.Vertical >= .2f)
+        {
+            VerticalSpeed = climbSpeed;
+            rb.gravityScale = 0f;
+        }
+        else if (joystick.Vertical <= -.2f)
+        {
+            VerticalSpeed = -climbSpeed;
+            rb.gravityScale = 0f;
+        }
+        else
+        {
+            VerticalSpeed = 0f;
+        }
+        Vector2 climbVelocity = new Vector2(rb.velocity.x, VerticalSpeed);
         rb.velocity = climbVelocity;
-        rb.gravityScale = 0f;
+
 
         if (Mathf.Abs(rb.velocity.y) > Mathf.Epsilon)
         {
@@ -91,19 +110,24 @@ public class Player : MonoBehaviour
     {
         if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; } //if it's in the air we don't continue
 
-        if(Input.GetButtonDown("Jump"))
+        if (joybutton.Pressed)
         {
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             rb.velocity = jumpVelocity;
         }
+        /*if(Input.GetButtonDown("Jump"))
+        {
+            Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
+            rb.velocity = jumpVelocity;
+        }*/
     }
 
     private void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-        if(playerHasHorizontalSpeed)
+        if (playerHasHorizontalSpeed)
         {
-           GameObject.FindGameObjectWithTag("Player").transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
+            GameObject.FindGameObjectWithTag("Player").transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
         }
     }
 }
