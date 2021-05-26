@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -12,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Climbing
   - 
   - 
   - 
@@ -43,8 +42,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 555199473
+    uniqueID: 693630743
+    locked: 0
+  - name: Ladders
+    uniqueID: 3095209489
+    locked: 0
+  - name: Middleground
+    uniqueID: 3871020787
     locked: 0
   - name: Foreground
-    uniqueID: 4206996729
+    uniqueID: 3460219483
     locked: 0
