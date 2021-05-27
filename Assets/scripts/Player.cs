@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : SwitchCharachters
 {
     //Config
     [SerializeField] float runSpeed = 5f;
@@ -25,8 +25,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        myAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        myCollider2D = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
+        
         gravityScaleAtStart = rb.gravityScale;
         joybutton = FindObjectOfType<Joybutton>();
     }
@@ -34,6 +33,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        myAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        myCollider2D = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
         Run();
         Jump();
         ClimbLadder();
@@ -73,7 +74,7 @@ public class Player : MonoBehaviour
     {
         if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
-            myAnimator.SetBool("Climbing", false);
+            //myAnimator.SetBool("Climbing", false);
             rb.gravityScale = gravityScaleAtStart;
             return;
         }
