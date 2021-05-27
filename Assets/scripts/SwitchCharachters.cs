@@ -15,7 +15,7 @@ public class SwitchCharachters : MonoBehaviour
 
     }
 
-    public void SwitchAvatarKrisi()
+    public void SwitchAvatarOne()
     {
         avatar1.gameObject.SetActive(true);
         avatar2.gameObject.SetActive(false);
@@ -23,7 +23,7 @@ public class SwitchCharachters : MonoBehaviour
 
     }
 
-    public void SwitchAvatarIvo()
+    public void SwitchAvatarTwo()
     {
         avatar1.gameObject.SetActive(false);
         avatar2.gameObject.SetActive(true);
@@ -31,7 +31,7 @@ public class SwitchCharachters : MonoBehaviour
 
     }
 
-    public void SwitchAvatarYuli()
+    public void SwitchAvatarThree()
     {
         avatar1.gameObject.SetActive(false);
         avatar2.gameObject.SetActive(false);
