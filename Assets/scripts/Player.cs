@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
     //Cached component references
     public Rigidbody2D rb;
     public Animator myAnimator;
-    public Collider2D myCollider2D;
+    public CapsuleCollider2D myBodyCollider;
+    public BoxCollider2D myFeet;
     public float gravityScaleAtStart;
     public Joystick joystick;
     public Joybutton joybutton;
@@ -25,8 +26,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        myAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        myCollider2D = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
+        
         gravityScaleAtStart = rb.gravityScale;
         joybutton = FindObjectOfType<Joybutton>();
     }
@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        myAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        myBodyCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CapsuleCollider2D>();
+        myFeet = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
         Run();
         Jump();
         ClimbLadder();
@@ -71,7 +74,7 @@ public class Player : MonoBehaviour
 
     private void ClimbLadder()
     {
-        if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
             myAnimator.SetBool("Climbing", false);
             rb.gravityScale = gravityScaleAtStart;
@@ -108,7 +111,7 @@ public class Player : MonoBehaviour
     }
     private void Jump()
     {
-        if (!myCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; } //if it's in the air we don't continue
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; } //if it's in the air we don't continue
 
         if (joybutton.Pressed)
         {
