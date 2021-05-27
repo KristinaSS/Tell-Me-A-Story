@@ -60,11 +60,12 @@
      <Compile Include="Assets\scripts\MainMenu.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
      <Compile Include="Assets\scripts\Joybutton.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\scripts\SwitchCharachters.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\scripts\MainMenu2.cs" />
-     <Compile Include="Assets\PauseMenu.cs" />
+     <Compile Include="Assets\OptionsMenu.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
