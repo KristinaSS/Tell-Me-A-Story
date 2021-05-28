@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: e945d31936860fd4cbbda854d3ff87d3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 43090944000
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4638936637440
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4649569198080
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6006338461696
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6261469585408
+    m_Localized: The King's Son-In-Law
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8939180367872
+    m_Localized: Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9048504901632
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24781163044864
+    m_Localized: Level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24938512359424
+    m_Localized: 'Level 2 '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25037741203456
+    m_Localized: Level 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25707781267456
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25931983593472
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
