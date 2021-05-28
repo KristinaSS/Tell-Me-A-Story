@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] float climbSpeed = 5f;
 
     //State
-    //bool isAlive = true;
+    bool isAlive = true;
 
     //Cached component references
     public Rigidbody2D rb;
@@ -34,6 +34,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        if (!isAlive) { return; }
         myAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         myBodyCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CapsuleCollider2D>();
         myFeet = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         Jump();
         ClimbLadder();
         FlipSprite();
+        Die();
     }
 
     private void Run()
@@ -131,6 +134,15 @@ public class Player : MonoBehaviour
         if (playerHasHorizontalSpeed)
         {
             GameObject.FindGameObjectWithTag("Player").transform.localScale = new Vector2(Mathf.Sign(rb.velocity.x), 1f);
+        }
+    }
+
+    private void Die()
+    {
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Water")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dying");
         }
     }
 }
