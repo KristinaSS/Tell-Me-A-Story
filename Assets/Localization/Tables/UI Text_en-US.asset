@@ -70,5 +70,9 @@ MonoBehaviour:
     m_Localized: Again
     m_Metadata:
       m_Items: []
+  - m_Id: 253386681982976
+    m_Localized: Next Level
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
