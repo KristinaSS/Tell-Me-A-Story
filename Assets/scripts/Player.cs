@@ -143,6 +143,7 @@ public class Player : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 }
