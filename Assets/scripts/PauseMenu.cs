@@ -11,7 +11,9 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-    
+    public GameObject storyPanel;
+    public GameObject endStoryPanel;
+
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -31,6 +33,11 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Entering game menu...");
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1f;
+        
+        if (SceneManager.GetActiveScene().name.Equals("Level3"))
+        {
+            endStoryPanel.SetActive(true);
+        }
     }
 
     public void QuitGame()
@@ -44,5 +51,11 @@ public class PauseMenu : MonoBehaviour
         
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
+        
+    }
+
+    public void ClickNext()
+    {
+        storyPanel.SetActive(false);
     }
 }

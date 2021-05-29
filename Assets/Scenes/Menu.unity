@@ -540,7 +540,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Language
 --- !u!222 &125061882
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -970,7 +970,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'The King''s Son-In-Law
+
+'
 --- !u!222 &457676286
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1308,7 +1310,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Exit
 --- !u!222 &553367389
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1836,7 +1838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Level 2
 --- !u!222 &878109771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2851,7 +2853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Exit
 --- !u!222 &1323478991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2965,7 +2967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Back
 --- !u!222 &1324292221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3772,7 +3774,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Level 3
 --- !u!222 &1623996324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3886,7 +3888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Level 1
 --- !u!222 &1644670166
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4000,7 +4002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Options
 --- !u!222 &1684825380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4114,7 +4116,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Volume
 --- !u!222 &1698003787
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4864,7 +4866,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Start
 --- !u!222 &1945555300
 CanvasRenderer:
   m_ObjectHideFlags: 0
