@@ -36,6 +36,5 @@ public class SwitchCharachters : MonoBehaviour
         avatar1.gameObject.SetActive(false);
         avatar2.gameObject.SetActive(false);
         avatar3.gameObject.SetActive(true);
-
     }
 }

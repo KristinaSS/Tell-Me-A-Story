@@ -196,11 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -345
+      value: -173
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -107
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -477,7 +477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 481, y: 205}
+  m_AnchoredPosition: {x: 281, y: 61}
   m_SizeDelta: {x: 45.9676, y: 40.8031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141186793
@@ -2526,7 +2526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.367}
   m_AnchorMax: {x: 1, y: 0.367}
-  m_AnchoredPosition: {x: 226, y: -97}
+  m_AnchoredPosition: {x: 68, y: -32}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901363715
@@ -2573,8 +2573,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 930780970}
-        m_TargetAssemblyTypeName: SwitchCharachters, Assembly-CSharp
+      - m_Target: {fileID: 511960113}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: SwitchAvatarOne
         m_Mode: 1
         m_Arguments:
@@ -2755,17 +2755,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927519686}
   m_CullTransparentMesh: 1
---- !u!114 &930780970 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6590606345811848360, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
-  m_PrefabInstance: {fileID: 6590606346204642178}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa90061ae05ca2040a1d4ad5e727bd36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &950136101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2791,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.367}
   m_AnchorMax: {x: 1, y: 0.367}
-  m_AnchoredPosition: {x: 386, y: -97}
+  m_AnchoredPosition: {x: 226, y: -28}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950136103
@@ -2849,8 +2838,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 930780970}
-        m_TargetAssemblyTypeName: SwitchCharachters, Assembly-CSharp
+      - m_Target: {fileID: 511960113}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: SwitchAvatarThree
         m_Mode: 1
         m_Arguments:
@@ -4002,7 +3991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.47784632, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -394, y: 250}
+  m_AnchoredPosition: {x: -205, y: 108}
   m_SizeDelta: {x: 30.6068, y: 59.198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411084712
@@ -4638,7 +4627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 306, y: -155.40501}
+  m_AnchoredPosition: {x: 155, y: -53.405014}
   m_SizeDelta: {x: 78, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743232616
@@ -4925,7 +4914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.367}
   m_AnchorMax: {x: 1, y: 0.367}
-  m_AnchoredPosition: {x: 306, y: -97}
+  m_AnchoredPosition: {x: 147, y: -2}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002774356
@@ -4972,8 +4961,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 930780970}
-        m_TargetAssemblyTypeName: SwitchCharachters, Assembly-CSharp
+      - m_Target: {fileID: 511960113}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: SwitchAvatarTwo
         m_Mode: 1
         m_Arguments:
@@ -31709,6 +31698,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6590606345787419344, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606345787419344, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606345787419344, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606345787419345, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606345787419345, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606345811848360, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606345811848361, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: isBird
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6590606345811848361, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
       propertyPath: joystick
       value: 
@@ -31717,6 +31734,10 @@ PrefabInstance:
       propertyPath: deathMenu
       value: 
       objectReference: {fileID: 1748099919}
+    - target: {fileID: 6590606345811848361, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: jumpSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6590606345811848361, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
       propertyPath: playerButtons
       value: 
@@ -31767,6 +31788,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590606345811848367, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606346342767260, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606346342767260, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606346342767260, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606346342767261, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606346342767261, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_Size.y
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590606346342767261, guid: e06459620ac466f438d66e0c58b2e153, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
