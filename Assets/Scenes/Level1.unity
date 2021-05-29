@@ -4450,7 +4450,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1550170888}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540144468}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: GoToNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1550170888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31605,11 +31617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290381164302619439, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.05
+      value: 14.01
       objectReference: {fileID: 0}
     - target: {fileID: 5290381164302619439, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33.77
+      value: 28.22
       objectReference: {fileID: 0}
     - target: {fileID: 5290381164302619439, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31643,6 +31655,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7209978493133043528, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
+      propertyPath: victoryMenu
+      value: 
+      objectReference: {fileID: 260792626}
+    - target: {fileID: 7209978493133043528, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
+      propertyPath: playerButtons
+      value: 
+      objectReference: {fileID: 1914764230}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
 --- !u!1001 &6026523237608649201

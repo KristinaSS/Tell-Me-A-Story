@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     // Message then methods
     void Start()
     {
+        Time.timeScale = 1f;
         rb = GetComponent<Rigidbody2D>();
         deathMenu.SetActive(false);
         playerButtons.SetActive(true);
