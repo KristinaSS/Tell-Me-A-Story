@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Ground
   - Climbing
-  - 
-  - 
+  - Player
+  - Interactables
   - 
   - 
   - 
@@ -47,9 +47,15 @@ TagManager:
   - name: Ladders
     uniqueID: 3095209489
     locked: 0
+  - name: Player
+    uniqueID: 1404381697
+    locked: 0
   - name: Middleground
     uniqueID: 3871020787
     locked: 0
   - name: Foreground
     uniqueID: 3460219483
+    locked: 0
+  - name: Interactables
+    uniqueID: 1038522797
     locked: 0

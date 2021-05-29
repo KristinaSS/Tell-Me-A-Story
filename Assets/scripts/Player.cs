@@ -151,6 +151,7 @@ public class Player : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
             deathMenu.SetActive(true);
             playerButtons.SetActive(false);
             
