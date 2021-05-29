@@ -44795,6 +44795,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6026523237122217264, guid: 64d956cda60273f4882e18ee4dcf529b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6026523237790457193, guid: 64d956cda60273f4882e18ee4dcf529b, type: 3}
       propertyPath: m_Name
       value: GameSession
