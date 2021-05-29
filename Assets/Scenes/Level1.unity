@@ -68198,7 +68198,7 @@ CompositeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -68226,7 +68226,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 99750de55ed969941aba70eac3f60344, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -69553,7 +69553,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0034821033, y: -0.30001172}
+  m_Offset: {x: 0.0034821033, y: -0.3109918}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -69564,7 +69564,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26018667, y: 0.067625225}
+  m_Size: {x: 0.26018667, y: 0.029006302}
   m_EdgeRadius: 0
 --- !u!70 &1948422948
 CapsuleCollider2D:
@@ -69575,12 +69575,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1948422946}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: c8201e596ae1c074a80b43377d66dfd5, type: 2}
-  m_IsTrigger: 1
+  m_Material: {fileID: 6200000, guid: 99750de55ed969941aba70eac3f60344, type: 2}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0038042467}
-  m_Size: {x: 0.33, y: 0.6623918}
+  m_Offset: {x: 0.0029999416, y: 0.0051705837}
+  m_Size: {x: 0.4075707, y: 0.65965927}
   m_Direction: 0
 --- !u!212 &1948422949
 SpriteRenderer:
