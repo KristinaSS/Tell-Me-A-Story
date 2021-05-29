@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
+    [SerializeField] bool canJump = true;
+    [SerializeField] float gravityIndex = 1f;
 
     public GameObject deathMenu;
     public GameObject playerButtons;
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
     public float gravityScaleAtStart;
     public Joystick joystick;
     public Joybutton joybutton;
+    public GameObject avatar1, avatar2, avatar3;
 
     // Message then methods
     void Start()
@@ -36,8 +39,11 @@ public class Player : MonoBehaviour
         deathMenu.SetActive(false);
         playerButtons.SetActive(true);
 
-            gravityScaleAtStart = rb.gravityScale;
+        gravityScaleAtStart = rb.gravityScale;
         joybutton = FindObjectOfType<Joybutton>();
+        avatar1.gameObject.SetActive(true);
+        avatar2.gameObject.SetActive(false);
+        avatar3.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -123,13 +129,15 @@ public class Player : MonoBehaviour
     }
     private void Jump()
     {
-        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; } //if it's in the air we don't continue
+        if (!canJump || !myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
         if (joybutton.Pressed)
         {
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             rb.velocity = jumpVelocity;
+            rb.gravityScale = gravityIndex;
         }
+
         /*if(Input.GetButtonDown("Jump"))
         {
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
@@ -152,14 +160,21 @@ public class Player : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
-            
+
             /*FindObjectOfType<GameSession>().ProcessPlayerDeath();*/
-            
-            deathMenu.SetActive(true);
-            playerButtons.SetActive(false);
-            
-            ToggleTime();
+
+            StartCoroutine(SimulateDying());
+
         }
+    }
+
+    IEnumerator SimulateDying()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        deathMenu.SetActive(true);
+        playerButtons.SetActive(false);
+
+        ToggleTime();
     }
 
     private void ToggleTime()
@@ -174,5 +189,38 @@ public class Player : MonoBehaviour
         ToggleTime();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    
+
+    public void SwitchAvatarOne()
+    {
+        canJump = true;
+        jumpSpeed = 30f;
+        gravityIndex = 1f;
+        rb.velocity = Vector2.zero;
+        avatar1.gameObject.SetActive(true);
+        avatar2.gameObject.SetActive(false);
+        avatar3.gameObject.SetActive(false);
+    }
+
+    public void SwitchAvatarTwo()
+    {
+        canJump = true;
+        jumpSpeed = 40f;
+        gravityIndex = 0f;
+        rb.velocity = Vector2.zero;
+        avatar1.gameObject.SetActive(false);
+        avatar2.gameObject.SetActive(true);
+        avatar3.gameObject.SetActive(false);
+    }
+
+    public void SwitchAvatarThree()
+    {
+
+        canJump = false;
+        gravityIndex = 0.5f;
+        rb.velocity = Vector2.zero;
+        avatar1.gameObject.SetActive(false);
+        avatar2.gameObject.SetActive(false);
+        avatar3.gameObject.SetActive(true);
+    }
+
 }
