@@ -410,13 +410,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141186791}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404157613}
-  m_Father: {fileID: 540144467}
-  m_RootOrder: 3
+  m_Father: {fileID: 1914764231}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1467,7 +1467,6 @@ RectTransform:
   - {fileID: 718196162}
   - {fileID: 1748099920}
   - {fileID: 260792627}
-  - {fileID: 141186792}
   - {fileID: 1914764231}
   - {fileID: 1237391600}
   m_Father: {fileID: 0}
@@ -3180,7 +3179,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 540144467}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3863,7 +3862,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1550170888}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540144468}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: GoToNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1550170888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4102,8 +4113,9 @@ RectTransform:
   - {fileID: 950136102}
   - {fileID: 68798208}
   - {fileID: 1743232615}
+  - {fileID: 141186792}
   m_Father: {fileID: 540144467}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -80062,11 +80074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5290381164302619439, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.16
+      value: 13.47
       objectReference: {fileID: 0}
     - target: {fileID: 5290381164302619439, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.98
+      value: 27.82
       objectReference: {fileID: 0}
     - target: {fileID: 5290381164302619439, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -80100,6 +80112,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7209978493133043528, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
+      propertyPath: victoryMenu
+      value: 
+      objectReference: {fileID: 260792626}
+    - target: {fileID: 7209978493133043528, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
+      propertyPath: playerButtons
+      value: 
+      objectReference: {fileID: 1914764230}
+    - target: {fileID: 7209978493133043528, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
+      propertyPath: nextLevelButton
+      value: 
+      objectReference: {fileID: 1550170885}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 315c0b93d551b9540a3548cbfbcfda41, type: 3}
 --- !u!1001 &6026523237608649201
