@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
+
+    public GameObject deathMenu;
+    public GameObject playerButtons;
+
+    private bool pauseGame = false;
 
     //State
     bool isAlive = true;
@@ -26,8 +32,10 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
-        gravityScaleAtStart = rb.gravityScale;
+        deathMenu.SetActive(false);
+        playerButtons.SetActive(true);
+
+            gravityScaleAtStart = rb.gravityScale;
         joybutton = FindObjectOfType<Joybutton>();
     }
 
@@ -137,12 +145,30 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Water")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            deathMenu.SetActive(true);
+            playerButtons.SetActive(false);
+            
+            ToggleTime();
         }
     }
+
+    private void ToggleTime()
+    {
+        pauseGame = !pauseGame;
+
+        Time.timeScale = pauseGame ? 0 : 1;
+    }
+
+    public void Retry()
+    {
+        ToggleTime();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    
 }
