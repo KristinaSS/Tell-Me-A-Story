@@ -145,8 +145,9 @@ PlayerSettings:
   targetPixelDensity: 30
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
-  androidMaxAspectRatio: 2.1
+  androidMaxAspectRatio: 16.9
   applicationIdentifier:
+    Android: com.DefaultCompany.TellMeAStory
     Standalone: com.DefaultCompany.TileVania
   buildNumber:
     Standalone: 0
