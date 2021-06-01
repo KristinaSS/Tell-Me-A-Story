@@ -75,6 +75,38 @@ MonoBehaviour:
     m_Key: nextLevelKey
     m_Metadata:
       m_Items: []
+  - m_Id: 437200899690496
+    m_Key: firstStoryKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437865797537792
+    m_Key: nextButtonKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 443373371674624
+    m_Key: secondLevel1Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 444034616283136
+    m_Key: secondLevel2Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446494336503808
+    m_Key: thirdLevel1Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 446570186297344
+    m_Key: thirdLevel2Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 449840329936896
+    m_Key: endLevel1Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 449875545313280
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

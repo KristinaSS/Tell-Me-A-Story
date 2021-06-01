@@ -10,7 +10,7 @@ public class LevelExit : MonoBehaviour
     [SerializeField] float levelLoadDelay = 1f;
 
     public GameObject victoryMenu;
-    public GameObject playerButtons;
+    //public GameObject playerButtons;
     public GameObject nextLevelButton;
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,7 +23,7 @@ public class LevelExit : MonoBehaviour
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         Time.timeScale = 1f;
         
-        playerButtons.SetActive(false);
+        //playerButtons.SetActive(false);
         victoryMenu.SetActive(true);
         Time.timeScale = 0f;
 

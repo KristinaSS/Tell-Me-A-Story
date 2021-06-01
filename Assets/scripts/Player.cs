@@ -8,13 +8,13 @@ public class Player : MonoBehaviour
 {
     //Config
     [SerializeField] float runSpeed = 5f;
-    [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float jumpSpeed = 30f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] bool canJump = true;
     [SerializeField] float gravityIndex = 1f;
 
     public GameObject deathMenu;
-    public GameObject playerButtons;
+    //public GameObject playerButtons;
 
     private bool pauseGame = false;
 
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 1f;
         rb = GetComponent<Rigidbody2D>();
         deathMenu.SetActive(false);
-        playerButtons.SetActive(true);
+        //playerButtons.SetActive(true);
 
         gravityScaleAtStart = rb.gravityScale;
         joybutton = FindObjectOfType<Joybutton>();
@@ -159,6 +159,7 @@ public class Player : MonoBehaviour
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Water")))
         {
             isAlive = false;
+            rb.velocity = new Vector2(0f, 0f);
             myAnimator.SetTrigger("Dying");
 
             /*FindObjectOfType<GameSession>().ProcessPlayerDeath();*/
@@ -172,7 +173,7 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1f);
         deathMenu.SetActive(true);
-        playerButtons.SetActive(false);
+        //playerButtons.SetActive(false);
 
         ToggleTime();
     }
@@ -194,8 +195,9 @@ public class Player : MonoBehaviour
     {
         canJump = true;
         jumpSpeed = 30f;
+        runSpeed = 10f;
         gravityIndex = 1f;
-        rb.velocity = Vector2.zero;
+       
         avatar1.gameObject.SetActive(true);
         avatar2.gameObject.SetActive(false);
         avatar3.gameObject.SetActive(false);
@@ -205,8 +207,9 @@ public class Player : MonoBehaviour
     {
         canJump = true;
         jumpSpeed = 40f;
+        runSpeed = 10f;
         gravityIndex = 0f;
-        rb.velocity = Vector2.zero;
+        
         avatar1.gameObject.SetActive(false);
         avatar2.gameObject.SetActive(true);
         avatar3.gameObject.SetActive(false);
@@ -216,8 +219,9 @@ public class Player : MonoBehaviour
     {
 
         canJump = false;
+        runSpeed = 20f;
         gravityIndex = 0.5f;
-        rb.velocity = Vector2.zero;
+        
         avatar1.gameObject.SetActive(false);
         avatar2.gameObject.SetActive(false);
         avatar3.gameObject.SetActive(true);
